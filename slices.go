@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+
 func maxInSlice(nums []int) (int, error) {
 	if len(nums) == 0 {
 		return 0, fmt.Errorf("slice is empty")
@@ -14,7 +15,7 @@ func maxInSlice(nums []int) (int, error) {
 	return max, nil
 }
 func main() {
-	nums := []int{8,9,5,2,100}
+	nums := []int{8, 9, 5, 2, 100}
 	maxValue, err := maxInSlice(nums)
 	if err != nil {
 		fmt.Println(err)
